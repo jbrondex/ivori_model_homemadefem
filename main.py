@@ -23,13 +23,14 @@ import Solvers.DepositionRateHansen_Solver
 import Solvers.EnergyConservation_Solver
 import Solvers.Stress_Solver
 import Solvers.Settlement_Solver
+### import sif_Simulations_Paper.sif_Fig2_CC3DOFsvsCDPC.sif_scenario2_schurholt_CC_3DOFs as sif
 ####/////////////////////////////####
 ####~~~~~~~~~~~~~~~~~~~~~~~~~~~~~####
 ####   CHOOSE WHICH SIF TO RUN   ####
 ####~~~~~~~~~~~~~~~~~~~~~~~~~~~~~####
 ####\\\\\\\\\\\\\\\\\\\\\\\\\\\\\####
-Directory_sif = 'sif_Simulations_Paper.sif_Fig7_SchurholtScenario3' ### THAT ARE THE ONLY LINES OF THE main.py THAT THE STANDARD USER MUST ADAPT
-Name_sif = 'sif_scenario3_schurholt_H_MF_CalPar' ### THAT ARE THE ONLY LINES OF THE main.py THAT THE STANDARD USER MUST ADAPT
+Directory_sif = 'sif_Simulations_Paper.sif_Fig2_CC3DOFsvsCDPC' ### THAT ARE THE ONLY LINES OF THE main.py THAT THE STANDARD USER MUST ADAPT
+Name_sif = 'sif_scenario2_schurholt_CC_3DOFs' ### THAT ARE THE ONLY LINES OF THE main.py THAT THE STANDARD USER MUST ADAPT
 sif = importlib.import_module(Directory_sif+'.'+Name_sif, package=None)
 
 ####/////////////////////####

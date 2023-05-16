@@ -88,7 +88,8 @@ More details on how to write a sif are given in the section below.
 
 In the main.py file, the only two lines that the user has to change are the "Directory_sif" and "Name_sif".
 They correspond to respectively, the path to the directory where the sif_<...>.py file to run is located, and the full
-name of this sif_<...>.py file. Once these lines have been filled, the main.py can be run.
+name of this sif_<...>.py file. Once these lines have been filled, the main.py can be run. In some situations, the importlib.import_module might not work.
+In that case, comment lines 32 to 34 of the main.py file and use instead line 26 to import the sif_<...>.py file you want to run.
 
 ## How to write a sif ?
 The sif_<...>.py (solver input file) basically corresponds to the user interface. All the sif_<...>.py that have been used 
